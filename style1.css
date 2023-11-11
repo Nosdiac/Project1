@@ -81,7 +81,7 @@ nav .left-nav a, .right-nav a{
   font-size: 5vw;
   color: #fff;
   text-align: center;
-  line-height: 13vh;
+  /* line-height: 13vh; */
 }
 .part1-img p{
   font-size: 1vw;
@@ -192,12 +192,10 @@ nav .left-nav a, .right-nav a{
 .left-part2 p{
   width: 80%;
   font-size: 1vw;
-  line-height: 2.5vh; 
 }
 .left-part2 h1{
   width: 65%;
-  font-size: 2.5vw;
-  line-height: 6vh; 
+  font-size: 2.5vw; 
   font-weight: 900;
 }
 .probtn{
@@ -566,4 +564,59 @@ footer{
 }
 .end span{
   margin: 0 0.6vw;
+}
+
+.ri-menu-2-line{
+  display: none;
+}
+
+@media (max-width:500px) {
+  .part2,.part3,.part4,.part5,footer{
+    display: none;
+  }
+  .ri-menu-2-line{
+    display: initial;
+    font-size: 3vw;
+  }
+  nav .left-nav a{
+    display: none;
+  }
+  nav .right-nav a{
+    display: none;
+  }
+
+  .mid-nav{
+    font-size: 5vw;
+  }
+  .right-nav button{
+    font-size: 3vw;
+    padding: 2.5vw 6vw;
+  }
+  .part1-img h1{
+    font-size: 9vw;
+  }
+  .part1-img p{
+    font-size: 4vw;
+  }
+  .part1-img .prop-select{
+    width: 80vw;
+    height: 43vh;
+  }
+  .prop-type a {
+    font-size: 3vw;
+  }
+  #city, #type{
+    width: 60vw;
+  }
+  .prop-option{
+    flex-direction: column;
+    font-size: 3.5vw;
+    align-items: center;
+  }
+  .prop-option button{
+    font-size: 3vw;
+    padding: 2.5vw 6vw;
+  }
+  
+  
 }
